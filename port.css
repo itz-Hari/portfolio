@@ -1,0 +1,298 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0f172a;
+    color:#fff;
+}
+
+header{
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    background:#111827;
+    padding:20px 8%;
+    z-index:1000;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav h2{
+    color:#38bdf8;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#38bdf8;
+}
+
+section{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+    padding:100px 0;
+    scroll-margin-top: 120px;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    gap: 60PX;
+}
+
+.hero-text{
+    flex: 1;
+}
+.hero-image{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.hero-image img{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #38bdf8;;
+}
+.hero h3{
+    color:#38bdf8;
+    margin-bottom:10px;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:10px;
+}
+
+.hero h2{
+    font-size:30px;
+    color:#cbd5e1;
+    margin-bottom:20px;
+}
+
+.hero p{
+    color:#94a3b8;
+    line-height:1.8;
+    max-width:650px;
+}
+
+.buttons{
+    margin-top:30px;
+}
+
+.btn{
+    display:inline-block;
+    text-decoration:none;
+    background:#2563eb;
+    color:white;
+    padding:12px 25px;
+    border-radius:8px;
+    margin-right:15px;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+}
+
+.btn2{
+    background:#16a34a;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:35px;
+}
+
+#about p{
+    text-align:center;
+    color:#cbd5e1;
+    line-height:1.8;
+}
+
+#education {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.education-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+.edu-card{
+    background:#1e293b;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    width:300px;
+    transition:.3s;
+}
+.edu-card:hover{
+    transform:translateY(-8px);
+}
+.skill-box{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#1e293b;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#38bdf8;
+    margin-bottom:20px;
+}
+
+.card p{
+    color:#cbd5e1;
+    line-height:2;
+}
+
+.project{
+    background:#1e293b;
+    padding:30px;
+    border-radius:15px;
+    margin-bottom:30px;
+    transition:.3s;
+}
+
+.project:hover{
+    transform:translateY(-8px);
+}
+
+.project h3{
+    color:#38bdf8;
+    margin-bottom:15px;
+}
+
+.project p{
+    color:#cbd5e1;
+    margin-bottom:20px;
+    line-height:1.8;
+}
+
+.project a{
+    display:inline-block;
+    text-decoration:none;
+    color:white;
+    background:#2563eb;
+    padding:10px 20px;
+    border-radius:8px;
+    margin-right:10px;
+    margin-top:10px;
+    transition:.3s;
+}
+
+.project a:hover{
+    background:#1d4ed8;
+}
+
+#contact{
+    text-align:center;
+}
+
+#contact p{
+    margin:18px 0;
+    color:#cbd5e1;
+    font-size:18px;
+}
+
+#contact p a{
+    color:#38bdf8;
+    text-decoration:none;
+}
+
+.contact-btn{
+    display:inline-block;
+    margin-top:25px;
+    
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#111827;
+    color:#94a3b8;
+}
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    margin-top:15px;
+    gap:15px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero{
+    flex-direction:column-reverse;
+    text-align:center;
+}
+
+.hero-image img{
+    width:250px;
+    height:250px;
+}
+
+.hero h1{
+    font-size:40px;
+}
+
+.hero h2{
+    font-size:24px;
+}
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.btn{
+    margin:0;
+}
+
+}
