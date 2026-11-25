@@ -55,12 +55,13 @@ section{
     scroll-margin-top: 120px;
 }
 
-.hero{
-    min-height:100vh;
-    display:flex;
+.hero {
+    min-height: 100vh;
+    display: flex;
     justify-content: space-between;
-    align-items:center;
-    gap: 60PX;
+    align-items: center;
+    gap: 60px;
+    padding-top: 150px;
 }
 
 .hero-text{
@@ -127,6 +128,12 @@ h2{
     text-align:center;
     margin-bottom:40px;
     font-size:35px;
+}
+
+nav h2 {
+    color: #38bdf8;
+    margin-bottom: 0;
+    text-align: left;
 }
 
 #about p{
@@ -267,6 +274,7 @@ nav ul{
 }
 
 .hero{
+    padding-top: 200px;
     flex-direction:column-reverse;
     text-align:center;
 }
